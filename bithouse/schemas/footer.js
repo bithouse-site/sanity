@@ -1,7 +1,7 @@
 export default {
     name: 'footer',
     type: 'document',
-    title: 'Footer',
+    title: 'Footer Schema',
     fields: [
         {
             name: 'logo',
