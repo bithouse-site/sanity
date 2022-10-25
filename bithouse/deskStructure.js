@@ -1,15 +1,16 @@
-import S from '@sanity/desk-tool/structure-builder'
+import S from "@sanity/desk-tool/structure-builder";
 
 export default () =>
   S.list()
-    .title('Base')
+    .title("Base")
     .items([
       S.listItem()
-        .title('Footer')
-        .child(
-          S.document()
-            .schemaType('footer')
-            .documentId('footer')
-        ),
-        ...S.documentTypeListItems().filter(listItem => !['footer'].includes(listItem.getId()))
-    ])
+        .title("Footer")
+        .child(S.document().schemaType("footer").documentId("footer")),
+      S.listItem()
+        .title("Header")
+        .child(S.document().schemaType("header").documentId("header")),
+      ...S.documentTypeListItems().filter(
+        (listItem) => !["footer", "header"].includes(listItem.getId())
+      ),
+    ]);
