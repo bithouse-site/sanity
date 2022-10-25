@@ -1,7 +1,7 @@
 export default {
   name: "header",
   type: "document",
-  title: "Header",
+  title: "Header Schema",
   fields: [
     {
       name: "logo",
@@ -23,9 +23,9 @@ export default {
               title: "name",
             },
             {
-              name: "url",
+              name: "link",
               type: "string",
-              title: "Url",
+              title: "Link",
             },
           ],
         },
