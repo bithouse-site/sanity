@@ -18,14 +18,32 @@ export default {
           type: "object",
           fields: [
             {
-              name: "name",
+              name: "nameMenu",
               type: "string",
-              title: "name",
+              title: "Name Menu",
             },
             {
-              name: "link",
-              type: "string",
-              title: "Link",
+              name: "submenu",
+              type: "array",
+              title: "Submenu",
+              of: [
+                {
+                  title: "Submenu",
+                  type: "object",
+                  fields: [
+                    {
+                      name: "Namesubmenu",
+                      type: "string",
+                      title: "Name Submenu",
+                    },
+                    {
+                      name: "link",
+                      type: "string",
+                      title: "Link",
+                    },
+                  ],
+                },
+              ],
             },
           ],
         },
