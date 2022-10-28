@@ -14,21 +14,9 @@ export default {
             title: 'Media',
             of: [
                 {
-                    name: 'media',
+                    name: 'socialMedia',
                     title: 'Social Media',
-                    type: 'object',
-                    fields: [
-                        {
-                            name: 'icon',
-                            type: 'image',
-                            title: 'Icon'
-                        },
-                        {
-                            name: 'link',
-                            type: 'url',
-                            title: 'Link'
-                        }
-                    ]
+                    type: 'socialMedia'
                 }
             ]
         },
