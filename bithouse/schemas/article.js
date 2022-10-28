@@ -48,45 +48,45 @@ export default {
             title: 'Date',
             initialValue: (new Date()).toISOString()
         },
-        {
-            title: 'Comment',
-            name: 'comment',
-            type: 'object',
-            fields: [
-                {
-                    name: 'name',
-                    type: 'string',
-                    title: 'name'
-                },
-                {
-                    name: 'image',
-                    type: 'image',
-                    title: 'Image'
-                },
-            ]
-        },
-        {
-            title: 'Comments',
-            name: 'comments',
-            type: 'array',
-            of: [
-                {
-                    title: 'comments',
-                    type: 'object',
-                    fields: [
-                        {
-                            name: 'name',
-                            type: 'string',
-                            title: 'name'
-                        },
-                        {
-                            name: 'image',
-                            type: 'image',
-                            title: 'Image'
-                        },
-                    ]
-                }
-            ]
-          }
+        // {
+        //     title: 'Comment',
+        //     name: 'sComment',
+        //     type: 'object',
+        //     fields: [
+        //         {
+        //             name: 'simpleComment',
+        //             type: 'string',
+        //             title: 'simpleComment'
+        //         },
+        //         {
+        //             name: 'simpleCommentImage',
+        //             type: 'image',
+        //             title: 'simpleCommentImage'
+        //         },
+        //     ]
+        // },
+        // {
+        //     title: 'Comments',
+        //     name: 'aComments',
+        //     type: 'array',
+        //     of: [
+        //         {
+        //             title: 'Subcomments',
+        //             type: 'object',
+        //             fields: [
+        //                 {
+        //                     name: 'multipleComments',
+        //                     type: 'string',
+        //                     title: 'multipleComments'
+        //                 },
+        //                 {
+        //                     name: 'multipleCommentsImage',
+        //                     type: 'image',
+        //                     title: 'multipleCommentsImage'
+        //                 },
+        //             ]
+        //         }
+        //     ]
+        //   }
     ]
 }
