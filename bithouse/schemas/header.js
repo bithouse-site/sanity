@@ -7,6 +7,9 @@ export default {
       name: "logo",
       type: "image",
       title: "Logo",
+      options: {
+        hotspot: true,
+      },
     },
     {
       title: "Menu",
@@ -21,6 +24,11 @@ export default {
               name: "nameMenu",
               type: "string",
               title: "Name Menu",
+            },
+            {
+              name: "link",
+              type: "string",
+              title: "Link",
             },
             {
               name: "submenu",
