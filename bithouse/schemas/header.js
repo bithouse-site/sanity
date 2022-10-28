@@ -7,11 +7,14 @@ export default {
       name: "logo",
       type: "image",
       title: "Logo",
+      options: {
+        hotspot: true,
+      },
     },
     {
       title: "Menu",
       name: "menu",
-      type: "menu"
+      type: "menu",
     },
     {
       name: "contact",
