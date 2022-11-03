@@ -12,9 +12,20 @@ import subMenu from "./subMenu";
 import menu from "./menu";
 import menuObject from "./menuObject";
 import subMenuObject from "./subMenuObject";
+import buttonObject from "./buttonObject";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   name: "default",
-  types: schemaTypes.concat([article, footer, header, socialMedia, subMenu, menu, menuObject, subMenuObject]),
+  types: schemaTypes.concat([
+    article,
+    footer,
+    header,
+    socialMedia,
+    subMenu,
+    menu,
+    menuObject,
+    subMenuObject,
+    buttonObject,
+  ]),
 });
