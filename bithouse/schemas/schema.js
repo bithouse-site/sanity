@@ -13,6 +13,7 @@ import menu from "./menu";
 import menuObject from "./menuObject";
 import subMenuObject from "./subMenuObject";
 import buttonObject from "./buttonObject";
+import hero from "./hero";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -27,5 +28,6 @@ export default createSchema({
     menuObject,
     subMenuObject,
     buttonObject,
+    hero,
   ]),
 });
