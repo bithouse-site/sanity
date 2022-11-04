@@ -17,9 +17,9 @@ export default {
       type: "menu",
     },
     {
-      name: "contact",
-      type: "string",
-      title: "Contact",
+      name: "ctaButton",
+      type: "buttonObject",
+      title: "Button",
     },
   ],
 };
