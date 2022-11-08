@@ -6,7 +6,10 @@ export default {
         {
             name: 'icon',
             type: 'image',
-            title: 'Icon'
+            title: 'Icon',
+            options:{
+                hotspot: true
+            }
         },
         {
             name: 'link',
