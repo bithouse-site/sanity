@@ -14,6 +14,7 @@ import menuObject from "./menuObject";
 import subMenuObject from "./subMenuObject";
 import buttonObject from "./buttonObject";
 import hero from "./hero";
+import richText from "./richText";
 import banner from "./banner";
 import bannerDoble from "./bannerDoble";
 
@@ -31,6 +32,7 @@ export default createSchema({
     subMenuObject,
     buttonObject,
     hero,
+    richText,
     banner,
     bannerDoble,
   ]),

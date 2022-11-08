@@ -18,21 +18,13 @@ export default {
     },
     {
       title: "Body Hero",
-      name: "RichTextHero",
-      type: "array",
-      of: [{ type: "block" }],
+      name: "richTextHero",
+      type: "richTextBody",
     },
     {
-      name: "mediaHero",
-      type: "array",
-      title: "Social Networks",
-      of: [
-        {
-          name: "socialMedia",
-          title: "Social Media",
-          type: "socialMedia",
-        },
-      ],
+      title: "Social Media",
+      name: "socialNetworks",
+      type: "boolean",
     },
   ],
 };
