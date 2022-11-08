@@ -1,5 +1,3 @@
-import buttonObject from "./buttonObject"
-
 export default{
   name: 'bannerDoble',
   type: 'document',
