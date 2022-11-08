@@ -6,7 +6,10 @@ export default {
         {
             name: 'logo',
             type: 'image',
-            title: 'Logo'
+            title: "Logo",
+            options: {
+                hotspot: true
+            }
         },
         {
             name: 'media',
@@ -29,6 +32,11 @@ export default {
             name: 'phone',
             type: 'string',
             title: 'Phone'
+        },
+        {
+            name: 'email',
+            type: 'string',
+            title: 'Email'
         }
     ]
 }
