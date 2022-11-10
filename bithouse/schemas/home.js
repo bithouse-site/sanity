@@ -9,12 +9,6 @@ export default {
       title: "Home Builder",
       of: [
         {
-          name: "header",
-          type: "reference",
-          title: "Header",
-          to: [{ type: "header" }],
-        },
-        {
           name: "banner",
           type: "reference",
           title: "Banner",
@@ -27,11 +21,11 @@ export default {
           to: [{ type: "bannerDoble" }],
         },
         {
-          name: "footer",
+          name: "hero",
           type: "reference",
-          title: "Footer",
-          to: [{ type: "footer" }],
-        },
+          title: "Hero",
+          to: [{ type: "hero" }],
+        }
       ],
     },
   ],
