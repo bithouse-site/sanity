@@ -18,6 +18,7 @@ import richText from "./richText";
 import banner from "./banner";
 import bannerDoble from "./bannerDoble";
 import home from './home';
+import dualAsimetric from "./dualAsimetric";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -37,5 +38,6 @@ export default createSchema({
     banner,
     bannerDoble,
     home,
+    dualAsimetric,
   ]),
 });
