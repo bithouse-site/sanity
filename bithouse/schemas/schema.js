@@ -20,7 +20,7 @@ import bannerDoble from "./bannerDoble";
 import home from "./home";
 import youtube from "./youtube";
 import dualSymmetric from "./dualSymmetric";
-import dualAsimetric from "./dualAsimetric";
+import dualAsymmetric from "./dualAsymmetric";
 import iconTextObject from "./iconTextObject";
 import colorList from "./colorList";
 
@@ -46,6 +46,6 @@ export default createSchema({
     colorList,
     home,
     dualSymmetric,
-    dualAsimetric,
+    dualAsymmetric,
   ]),
 });

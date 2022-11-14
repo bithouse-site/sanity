@@ -1,7 +1,7 @@
 export default {
-  name: "DualAsimetric",
+  name: "dualAsymmetric",
   type: "document",
-  title: "Dual Asimetric",
+  title: "Dual Asymmetric",
   fields: [
     {
       name: "title",
