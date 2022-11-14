@@ -30,8 +30,8 @@ export default {
       title: "Description",
     },
     {
-      name: "content",
-      type: "string",
+      name: "richTextDualA",
+      type: "richTextBody",
       title: "Content",
     },
     {
