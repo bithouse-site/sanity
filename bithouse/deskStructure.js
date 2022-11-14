@@ -10,7 +10,10 @@ export default () =>
       S.listItem()
         .title("Header")
         .child(S.document().schemaType("header").documentId("header")),
+      S.listItem()
+        .title("Home")
+        .child(S.document().schemaType("home").documentId("home")),
       ...S.documentTypeListItems().filter(
-        (listItem) => !["footer", "header"].includes(listItem.getId())
+        (listItem) => !["footer", "header", "home"].includes(listItem.getId())
       ),
     ]);
