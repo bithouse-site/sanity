@@ -17,11 +17,12 @@ import hero from "./hero";
 import richText from "./richText";
 import banner from "./banner";
 import bannerDoble from "./bannerDoble";
+import home from "./home";
 import youtube from "./youtube";
 import dualSymmetric from "./dualSymmetric";
+import dualAsymmetric from "./dualAsymmetric";
 import iconTextObject from "./iconTextObject";
 import colorList from "./colorList";
-import home from "./home";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -41,9 +42,10 @@ export default createSchema({
     banner,
     bannerDoble,
     youtube,
-    dualSymmetric,
     iconTextObject,
     colorList,
     home,
+    dualSymmetric,
+    dualAsymmetric,
   ]),
 });

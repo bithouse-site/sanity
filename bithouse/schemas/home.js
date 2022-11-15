@@ -32,6 +32,12 @@ export default {
           title: "Dual Symmetric",
           to: [{ type: "dualSymmetric" }],
         },
+        {
+          name: "dualAsymmetric",
+          type: "reference",
+          title: "Dual Asymmetric",
+          to: [{ type: "dualAsymmetric" }],
+        },
       ],
     },
   ],
