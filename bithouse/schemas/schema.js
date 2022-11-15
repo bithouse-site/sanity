@@ -23,6 +23,8 @@ import dualSymmetric from "./dualSymmetric";
 import dualAsymmetric from "./dualAsymmetric";
 import iconTextObject from "./iconTextObject";
 import colorList from "./colorList";
+import vigentes from "./vigentes";
+import cardObject from "./cardObject";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -47,5 +49,7 @@ export default createSchema({
     home,
     dualSymmetric,
     dualAsymmetric,
+    vigentes,
+    cardObject,
   ]),
 });
