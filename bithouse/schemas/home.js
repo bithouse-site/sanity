@@ -25,7 +25,13 @@ export default {
           type: "reference",
           title: "Hero",
           to: [{ type: "hero" }],
-        }
+        },
+        {
+          name: "dualSymmetric",
+          type: "reference",
+          title: "Dual Symmetric",
+          to: [{ type: "dualSymmetric" }],
+        },
       ],
     },
   ],

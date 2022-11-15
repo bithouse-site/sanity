@@ -27,9 +27,15 @@ export default {
       type: "richTextBody",
     },
     {
-      title: "First text",
-      name: "firstText",
-      type: "boolean",
+      name: "imageSide",
+      type: "string",
+      title: "Image Side",
+      options: {
+        list: [
+          { title: "Left", value: "left" },
+          { title: "Right", value: "right" },
+        ],
+      },
     },
     {
       title: "Profile",
