@@ -30,13 +30,7 @@ export default {
       name: "carousel",
       type: "array",
       title: "Carousel",
-      of: [
-        {
-          name: "image",
-          type: "image",
-          title: "Image",
-        },
-      ],
+      of: [{ type: "image" }],
     },
     {
       name: "contentAfterCarousel",
@@ -60,31 +54,12 @@ export default {
       name: "articleReferences",
       type: "array",
       title: "Otros Visitantes",
-      of: [
-        {
-          name: "articleReference",
-          type: "reference",
-          title: "Article Reference",
-          to: [{ type: "article" }],
-        },
-      ],
+      of: [{ type: "articleReference" }],
     },
     {
       name: "articleCard",
-      type: "object",
+      type: "cardObject",
       title: "Article Card",
-      fields: [
-        {
-          name: "text",
-          type: "richTextBody",
-          title: "Text",
-        },
-        {
-          name: "artists",
-          type: "string",
-          title: "Artists",
-        },
-      ],
     },
   ],
 };

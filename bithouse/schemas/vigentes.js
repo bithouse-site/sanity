@@ -27,13 +27,7 @@ export default {
       name: "cards",
       type: "array",
       title: "Cards",
-      of: [
-        {
-          name: "card",
-          type: "cardObject",
-          title: "Card",
-        },
-      ],
+      of: [{ type: "cardObject" }],
     },
   ],
 };
