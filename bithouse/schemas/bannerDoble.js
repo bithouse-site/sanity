@@ -19,14 +19,24 @@ export default {
       title: "Description",
     },
     {
+      name:"content",
+      type: "richTextBody",
+      title: "Content",
+    },
+    {
       name: "button",
       type: "buttonObject",
       title: "Button",
     },
     {
-      name: "color",
+      name: "colorLeft",
       type: "color",
-      title: "Color List",
+      title: "Color Left",
+    },
+    {
+      name: "colorRight",
+      type: "color",
+      title: "Color Right",
     },
   ],
 };
