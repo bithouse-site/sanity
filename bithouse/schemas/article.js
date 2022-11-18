@@ -1,92 +1,65 @@
 export default {
-    name: 'article',
-    type: 'document',
-    title: 'Article',
-    fields: [
+  name: "article",
+  type: "document",
+  title: "Article",
+  fields: [
+    {
+      name: "title",
+      type: "string",
+      title: "Title",
+    },
+    {
+      name: "imageHeader",
+      type: "image",
+      title: "Image Header",
+    },
+    {
+      name: "slug",
+      type: "slug",
+      title: "Slug",
+      options: {
+        source: "title",
+      },
+    },
+    {
+      name: "contentBeforeCarousel",
+      type: "richTextBody",
+      title: "Content Before Carousel",
+    },
+    {
+      name: "carousel",
+      type: "array",
+      title: "Carousel",
+      of: [{ type: "image" }],
+    },
+    {
+      name: "contentAfterCarousel",
+      type: "richTextBody",
+      title: "Content After Carousel",
+    },
+    {
+      name: "dualSection",
+      type: "array",
+      title: "Dual Section",
+      of: [
         {
-            name: 'title',
-            type: 'string',
-            title: 'Title'
-        }, 
-        {
-            name: 'description',
-            type: 'string',
-            title: 'Description'
+          name: "dualSymmetric",
+          type: "reference",
+          title: "Dual Symmetric",
+          to: [{ type: "dualSymmetric" }],
         },
-        {
-            name: 'enabled',
-            type: 'boolean',
-            title: 'Enabled'
-        },
-        {
-            name: 'image',
-            type: 'image',
-            title: 'Image'
-        },
-        {
-            name: 'geopoint',
-            type: 'geopoint',
-            title: 'Geopoint'
-        },
-        {
-            name: 'link',
-            type: 'url',
-            title: 'Link'
-        },
-        {
-            name: 'slug',
-            type: 'slug',
-            title: 'Slug',
-            options: {
-                source: 'title'
-            }
-            
-        },
-        {
-            name: 'date',
-            type: 'datetime',
-            title: 'Date',
-            initialValue: (new Date()).toISOString()
-        },
-        // {
-        //     title: 'Comment',
-        //     name: 'sComment',
-        //     type: 'object',
-        //     fields: [
-        //         {
-        //             name: 'simpleComment',
-        //             type: 'string',
-        //             title: 'simpleComment'
-        //         },
-        //         {
-        //             name: 'simpleCommentImage',
-        //             type: 'image',
-        //             title: 'simpleCommentImage'
-        //         },
-        //     ]
-        // },
-        // {
-        //     title: 'Comments',
-        //     name: 'aComments',
-        //     type: 'array',
-        //     of: [
-        //         {
-        //             title: 'Subcomments',
-        //             type: 'object',
-        //             fields: [
-        //                 {
-        //                     name: 'multipleComments',
-        //                     type: 'string',
-        //                     title: 'multipleComments'
-        //                 },
-        //                 {
-        //                     name: 'multipleCommentsImage',
-        //                     type: 'image',
-        //                     title: 'multipleCommentsImage'
-        //                 },
-        //             ]
-        //         }
-        //     ]
-        //   }
-    ]
-}
+      ],
+    },
+    {
+      name: "articleReferences",
+      type: "array",
+      title: "Otros Visitantes",
+      of: [{ type: "articleReference" }],
+    },
+    {
+      name: "articleCard",
+      type: "cardObject",
+      title: "Article Card",
+    },
+  ],
+};

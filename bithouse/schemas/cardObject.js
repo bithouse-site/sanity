@@ -1,7 +1,7 @@
 export default {
-  name: "banner",
-  type: "document",
-  title: "Banner",
+  name: "cardObject",
+  type: "object",
+  title: "Card",
   fields: [
     {
       name: "title",
@@ -14,14 +14,14 @@ export default {
       title: "Image",
     },
     {
-      name: "description",
-      type: "string",
-      title: "Description",
+      name: "content",
+      type: "richTextBody",
+      title: "Content",
     },
     {
-      name: "color",
-      type: "color",
-      title: "Color List",
+      name: "link",
+      type: "url",
+      title: "Link",
     },
   ],
 };
