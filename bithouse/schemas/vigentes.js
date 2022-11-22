@@ -27,7 +27,7 @@ export default {
       name: "cards",
       type: "array",
       title: "Cards",
-      of: [{ type: "cardObject" }],
+      of: [{ type: "cardReference" }],
     },
   ],
 };
