@@ -25,15 +25,17 @@ import iconTextObject from "./iconTextObject";
 import colorList from "./colorList";
 import vigentes from "./vigentes";
 import articleReference from "./articleReference";
-import cards from "./cards";
+import cardsVigentes from "./cardsVigentes";
 import cardReference from "./cardReference";
+import articleCard from "./articleCard";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   name: "default",
   types: schemaTypes.concat([
     article,
-    cards,
+    articleCard,
+    cardsVigentes,
     cardReference,
     footer,
     header,
