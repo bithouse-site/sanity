@@ -24,14 +24,17 @@ import dualAsymmetric from "./dualAsymmetric";
 import iconTextObject from "./iconTextObject";
 import colorList from "./colorList";
 import vigentes from "./vigentes";
-import cardObject from "./cardObject";
 import articleReference from "./articleReference";
+import cards from "./cards";
+import cardReference from "./cardReference";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   name: "default",
   types: schemaTypes.concat([
     article,
+    cards,
+    cardReference,
     footer,
     header,
     socialMedia,
@@ -51,7 +54,6 @@ export default createSchema({
     dualSymmetric,
     dualAsymmetric,
     vigentes,
-    cardObject,
     articleReference,
   ]),
 });

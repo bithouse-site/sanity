@@ -58,7 +58,7 @@ export default {
     },
     {
       name: "articleCard",
-      type: "cardObject",
+      type: "cardReference",
       title: "Article Card",
     },
   ],
