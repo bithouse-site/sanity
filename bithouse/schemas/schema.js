@@ -26,6 +26,7 @@ import colorList from "./colorList";
 import vigentes from "./vigentes";
 import cardObject from "./cardObject";
 import articleReference from "./articleReference";
+import textBlock from "./textBlock";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -53,5 +54,6 @@ export default createSchema({
     vigentes,
     cardObject,
     articleReference,
+    textBlock,
   ]),
 });

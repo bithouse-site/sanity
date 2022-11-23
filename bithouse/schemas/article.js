@@ -23,7 +23,7 @@ export default {
     },
     {
       name: "contentBeforeCarousel",
-      type: "richTextBody",
+      type: "textBlock",
       title: "Content Before Carousel",
     },
     {
@@ -34,7 +34,7 @@ export default {
     },
     {
       name: "contentAfterCarousel",
-      type: "richTextBody",
+      type: "textBlock",
       title: "Content After Carousel",
     },
     {
@@ -49,6 +49,11 @@ export default {
           to: [{ type: "dualSymmetric" }],
         },
       ],
+    },
+    {
+      name: "subtitleArt",
+      type: "string",
+      title: "Subtitle",
     },
     {
       name: "articleReferences",
