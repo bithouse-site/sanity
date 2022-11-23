@@ -1,7 +1,7 @@
 export default {
   name: "article",
   type: "document",
-  title: "Article",
+  title: "Article Schema",
   fields: [
     {
       name: "title",
@@ -22,49 +22,9 @@ export default {
       },
     },
     {
-      name: "contentBeforeCarousel",
-      type: "textBlock",
-      title: "Content Before Carousel",
-    },
-    {
-      name: "carousel",
-      type: "array",
-      title: "Carousel",
-      of: [{ type: "image" }],
-    },
-    {
-      name: "contentAfterCarousel",
-      type: "textBlock",
-      title: "Content After Carousel",
-    },
-    {
-      name: "dualSection",
-      type: "array",
-      title: "Dual Section",
-      of: [
-        {
-          name: "dualSymmetric",
-          type: "reference",
-          title: "Dual Symmetric",
-          to: [{ type: "dualSymmetric" }],
-        },
-      ],
-    },
-    {
-      name: "subtitleArt",
-      type: "string",
-      title: "Subtitle",
-    },
-    {
-      name: "articleReferences",
-      type: "array",
-      title: "Otros Visitantes",
-      of: [{ type: "articleReference" }],
-    },
-    {
-      name: "articleCard",
-      type: "articleCard",
-      title: "Article Card",
+      name: "articleArray",
+      type: "articleBuilder",
+      title: "Components",
     },
   ],
 };
