@@ -63,7 +63,7 @@ export default {
     },
     {
       name: "articleCard",
-      type: "cardObject",
+      type: "articleCard",
       title: "Article Card",
     },
   ],

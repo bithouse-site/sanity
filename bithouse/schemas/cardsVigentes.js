@@ -1,7 +1,7 @@
 export default {
-  name: "cardObject",
-  type: "object",
-  title: "Card",
+  name: "cardsVigentes",
+  type: "document",
+  title: "Cards Vigentes",
   fields: [
     {
       name: "title",
@@ -12,6 +12,9 @@ export default {
       name: "image",
       type: "image",
       title: "Image",
+      options: {
+        hotspot: true,
+      },
     },
     {
       name: "content",
