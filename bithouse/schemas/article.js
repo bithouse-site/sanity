@@ -23,8 +23,22 @@ export default {
     },
     {
       name: "articleArray",
-      type: "articleBuilder",
+      type: "array",
       title: "Components",
+      of: [
+        {
+          type: "imageComponent",
+        },
+        {
+          type: "textBlock",
+        },
+        {
+          //name: "dualSymmetric",
+          type: "dualSectionArray",
+          //title: "Dual Symmetric",
+        },
+      ],
     },
+    
   ],
 };

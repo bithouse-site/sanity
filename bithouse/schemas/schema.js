@@ -29,9 +29,11 @@ import textBlock from "./textBlock";
 import cardsVigentes from "./cardsVigentes";
 import cardReference from "./cardReference";
 import articleCard from "./articleCard";
-import carousel from "./carousel";
+
+
 import arrayDualSection from "./arrayDualSection";
-import articleBuilder from "./articleBuilder";
+import image from "./imageComponent";
+
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -62,8 +64,8 @@ export default createSchema({
     vigentes,
     articleReference,
     textBlock,
-    carousel,
+    image,
     arrayDualSection,
-    articleBuilder,
+    
   ]),
 });

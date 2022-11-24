@@ -1,8 +1,8 @@
 export default {
   name: "dualSectionArray",
-  type: "array",
+  type: "object",
   title: "Dual Schema",
-  of: [
+  fields: [
     {
       name: "dualSymmetric",
       type: "reference",
