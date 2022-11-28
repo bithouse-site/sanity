@@ -28,6 +28,11 @@ import articleReference from "./articleReference";
 import cardsVigentes from "./cardsVigentes";
 import cardReference from "./cardReference";
 import articleCard from "./articleCard";
+import moduloResidentes from "./moduloResidentes";
+import producto from "./producto";
+import quoteCard from "./quoteCard";
+import quotes from "./quotes";
+import residentes from "./residentes";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -57,5 +62,10 @@ export default createSchema({
     dualAsymmetric,
     vigentes,
     articleReference,
+    moduloResidentes,
+    producto,
+    quoteCard,
+    quotes,
+    residentes,
   ]),
 });
