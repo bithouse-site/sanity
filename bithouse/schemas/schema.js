@@ -29,11 +29,14 @@ import textBlock from "./textBlock";
 import cardsVigentes from "./cardsVigentes";
 import cardReference from "./cardReference";
 import articleCard from "./articleCard";
-
+import moduloResidentes from "./moduloResidentes";
+import producto from "./producto";
+import quoteCard from "./quoteCard";
+import quotes from "./quotes";
+import residentes from "./residentes";
 
 import arrayDualSection from "./arrayDualSection";
 import image from "./imageComponent";
-
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -66,6 +69,10 @@ export default createSchema({
     textBlock,
     image,
     arrayDualSection,
-    
+    moduloResidentes,
+    producto,
+    quoteCard,
+    quotes,
+    residentes,
   ]),
 });
