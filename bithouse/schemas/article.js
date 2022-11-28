@@ -1,7 +1,7 @@
 export default {
   name: "article",
   type: "document",
-  title: "Article Schema",
+  title: "Article",
   fields: [
     {
       name: "title",
@@ -10,7 +10,7 @@ export default {
     },
     {
       name: "imageHeader",
-      type: "image",
+      type: "imageComponent",
       title: "Image Header",
     },
     {
@@ -22,7 +22,7 @@ export default {
       },
     },
     {
-      name: "articleArray",
+      name: "ArticleBuilder",
       type: "array",
       title: "Components",
       of: [
@@ -33,12 +33,25 @@ export default {
           type: "textBlock",
         },
         {
-          //name: "dualSymmetric",
           type: "dualSectionArray",
-          //title: "Dual Symmetric",
         },
       ],
     },
-    
+    {
+      name: "otherTitle",
+      type: "string",
+      title: "Subtitle",
+    },
+    {
+      name: "articleReferences",
+      type: "array",
+      title: "Otros Visitantes",
+      of: [{ type: "articleReference" }],
+    },
+    {
+      name: "articleCard",
+      type: "articleCard",
+      title: "Article Card",
+    },
   ],
 };
