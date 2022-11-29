@@ -10,7 +10,7 @@ export default {
     },
     {
       name: "imageHeader",
-      type: "image",
+      type: "imageComponent",
       title: "Image Header",
     },
     {
@@ -22,33 +22,25 @@ export default {
       },
     },
     {
-      name: "contentBeforeCarousel",
-      type: "richTextBody",
-      title: "Content Before Carousel",
-    },
-    {
-      name: "carousel",
+      name: "ArticleBuilder",
       type: "array",
-      title: "Carousel",
-      of: [{ type: "image" }],
-    },
-    {
-      name: "contentAfterCarousel",
-      type: "richTextBody",
-      title: "Content After Carousel",
-    },
-    {
-      name: "dualSection",
-      type: "array",
-      title: "Dual Section",
+      title: "Components",
       of: [
         {
-          name: "dualSymmetric",
-          type: "reference",
-          title: "Dual Symmetric",
-          to: [{ type: "dualSymmetric" }],
+          type: "imageComponent",
+        },
+        {
+          type: "textBlock",
+        },
+        {
+          type: "dualSectionArray",
         },
       ],
+    },
+    {
+      name: "otherTitle",
+      type: "string",
+      title: "Subtitle",
     },
     {
       name: "articleReferences",
