@@ -19,17 +19,33 @@ export default {
     {
       name: "description",
       type: "string",
-      title: "Description",
+      title: "Image Description",
     },
     {
-      name:"content",
+      name: "content",
       type: "richTextBody",
       title: "Content",
+    },
+    {
+      name: "subtitle",
+      type: "iconTextObject",
+      title: "Subtitle",
     },
     {
       name: "button",
       type: "buttonObject",
       title: "Button",
+    },
+    {
+      name: "buttonType",
+      type: "string",
+      title: "Button Type",
+      options: {
+        list: [
+          { title: "Button", value: "button" },
+          { title: "Link", value: "link" },
+        ],
+      },
     },
     {
       name: "colorLeft",
