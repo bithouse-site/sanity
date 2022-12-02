@@ -34,9 +34,11 @@ import producto from "./producto";
 import quoteCard from "./quoteCard";
 import quotes from "./quotes";
 import residentes from "./residentes";
-
+import visitant from "./visitant";
 import arrayDualSection from "./arrayDualSection";
 import image from "./imageComponent";
+import heroBackground from "./heroBackground";
+import arrayBanner from "./arrayBanner";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -74,5 +76,8 @@ export default createSchema({
     quoteCard,
     quotes,
     residentes,
+    visitant,
+    heroBackground,
+    arrayBanner,
   ]),
 });

@@ -13,7 +13,11 @@ export default () =>
       S.listItem()
         .title("Home")
         .child(S.document().schemaType("home").documentId("home")),
+      S.listItem()
+        .title("Visitant")
+        .child(S.document().schemaType("visitant").documentId("visitant")),
       ...S.documentTypeListItems().filter(
-        (listItem) => !["footer", "header", "home"].includes(listItem.getId())
+        (listItem) =>
+          !["footer", "header", "home", "visitant"].includes(listItem.getId())
       ),
     ]);
