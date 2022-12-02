@@ -13,10 +13,5 @@ export default {
       type: "richTextBody",
       title: "Card Content",
     },
-    {
-      name: "link",
-      type: "string",
-      title: "Link Name",
-    },
   ],
 };
