@@ -19,15 +19,15 @@ export default {
       title: "Residentes",
     },
     {
+      name: "quotes",
+      type: "quotes",
+      title: "Quotes",
+    },
+    {
       name: "productos",
       type: "array",
       title: "Productos",
       of: [{ type: "producto" }],
-    },
-    {
-      name: "quotes",
-      type: "quotes",
-      title: "Quotes",
     },
     {
       name: "bannerDoble",
