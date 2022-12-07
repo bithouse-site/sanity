@@ -17,7 +17,7 @@ export default {
           type: "sectionBanner",
         },
         {
-          type: "articleReference",
+          type: "booleanArticle",
         },
       ],
     },
