@@ -2,9 +2,21 @@ export default {
   name: "vigentes",
   type: "document",
   title: "Vigentes",
+  preview: {
+    select: {
+      title: "richTextVigentes",
+      media: "title"
+    },
+    prepare(selection) {
+      return{
+        title: selection.title[0].children[0].text.slice(0,20),
+        media: selection.media
+      }
+    }
+  },
   fields: [
     {
-      name: "title",
+      name: "titleVigentes",
       type: "image",
       title: "Title",
     },

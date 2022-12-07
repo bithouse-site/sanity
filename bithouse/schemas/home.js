@@ -38,6 +38,12 @@ export default {
           title: "Dual Asymmetric",
           to: [{ type: "dualAsymmetric" }],
         },
+        {
+          name: "vigentes",
+          type: "reference",
+          title: "Vigentes",
+          to: [{ type: "vigentes" }],
+        },
       ],
     },
   ],
