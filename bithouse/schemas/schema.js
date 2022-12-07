@@ -24,14 +24,31 @@ import dualAsymmetric from "./dualAsymmetric";
 import iconTextObject from "./iconTextObject";
 import colorList from "./colorList";
 import vigentes from "./vigentes";
-import cardObject from "./cardObject";
 import articleReference from "./articleReference";
+import textBlock from "./textBlock";
+import cardsVigentes from "./cardsVigentes";
+import cardReference from "./cardReference";
+import articleCard from "./articleCard";
+import moduloResidentes from "./moduloResidentes";
+import producto from "./producto";
+import quoteCard from "./quoteCard";
+import quotes from "./quotes";
+import residentes from "./residentes";
+import visitant from "./visitant";
+import arrayDualSection from "./arrayDualSection";
+import image from "./imageComponent";
+import heroBackground from "./heroBackground";
+import arrayBanner from "./arrayBanner";
+import booleanArticle from "./boolean";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   name: "default",
   types: schemaTypes.concat([
     article,
+    articleCard,
+    cardsVigentes,
+    cardReference,
     footer,
     header,
     socialMedia,
@@ -51,7 +68,18 @@ export default createSchema({
     dualSymmetric,
     dualAsymmetric,
     vigentes,
-    cardObject,
     articleReference,
+    textBlock,
+    image,
+    arrayDualSection,
+    moduloResidentes,
+    producto,
+    quoteCard,
+    quotes,
+    residentes,
+    visitant,
+    heroBackground,
+    arrayBanner,
+    booleanArticle,
   ]),
 });

@@ -5,11 +5,13 @@ export default {
   fields: [
     {
       name: "logo",
-      type: "image",
-      title: "Logo",
-      options: {
-        hotspot: true,
-      },
+      type: "imageComponent",
+      title: "Logo Desktop",
+    },
+    {
+      name: "logoMobile",
+      type: "imageComponent",
+      title: "Logo Mobile",
     },
     {
       title: "Menu",

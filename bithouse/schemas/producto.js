@@ -1,7 +1,7 @@
 export default {
-  name: "cardObject",
+  name: "producto",
   type: "object",
-  title: "Card",
+  title: "Producto",
   fields: [
     {
       name: "title",
@@ -9,19 +9,14 @@ export default {
       title: "Title",
     },
     {
-      name: "image",
+      name: "icon",
       type: "image",
-      title: "Image",
+      title: "Icon",
     },
     {
       name: "content",
       type: "richTextBody",
       title: "Content",
-    },
-    {
-      name: "link",
-      type: "url",
-      title: "Link",
     },
   ],
 };

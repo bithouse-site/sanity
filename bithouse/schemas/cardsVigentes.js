@@ -1,7 +1,7 @@
 export default {
-  name: "banner",
+  name: "cardsVigentes",
   type: "document",
-  title: "Banner",
+  title: "Cards Vigentes",
   fields: [
     {
       name: "title",
@@ -17,14 +17,14 @@ export default {
       },
     },
     {
-      name: "description",
-      type: "string",
-      title: "Description",
+      name: "content",
+      type: "richTextBody",
+      title: "Content",
     },
     {
-      name: "color",
-      type: "color",
-      title: "Color List",
+      name: "link",
+      type: "url",
+      title: "Link",
     },
   ],
 };
