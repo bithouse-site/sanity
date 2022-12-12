@@ -21,11 +21,6 @@ export default {
       title: "Title",
     },
     {
-      name: "background",
-      type: "image",
-      title: "Background",
-    },
-    {
       name: "richTextVigentes",
       type: "richTextBody",
       title: "Content",
